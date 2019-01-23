@@ -1,15 +1,19 @@
 import {
-  ADD_HIGHLIGHT
+  ADD_HIGHLIGHT,
 } from '../actions'
 
 const initialState = []
 
-export function highlights(state = initialState, action) {
+const highlights = (state = initialState, action) => {
   switch (action.type) {
     case ADD_HIGHLIGHT:
-      const highlights = state.concat(action.highlight)
-      return highlights.sort((el, next) => (el.head < next.head ? -1: 0))
+      return state
+        .concat(action.highlight)
+        .sort((el, next) => (el.head < next.head ? -1 : 0))
+
     default:
       return state
   }
 }
+
+export default highlights

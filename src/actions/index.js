@@ -8,7 +8,7 @@ export const ADD_HIGHLIGHT = 'ADD_HIGHLIGHT'
 export const COPY_DOCUMENT = 'COPY_DOCUMENT'
 
 const exec = (cmd, param = null) => {
-  document.execCommand('styleWithCSS', false);
+  document.execCommand('styleWithCSS', false)
   document.execCommand(cmd, false, param)
 }
 
@@ -23,7 +23,7 @@ const getHeadNTail = (selection) => {
 
   return {
     head,
-    tail
+    tail,
   }
 }
 
@@ -36,10 +36,9 @@ const getSelectedHighlight = () => {
     head,
     tail,
   }
-
 }
 
-export const addHighlight = color => {
+export const addHighlight = (color) => {
   const selectedhighlight = getSelectedHighlight()
   exec(HIGHLIGHT_CMD, color)
 
@@ -47,17 +46,16 @@ export const addHighlight = color => {
     type: ADD_HIGHLIGHT,
     highlight: {
       ...selectedhighlight,
-      color
-    }
+      color,
+    },
   }
 }
 
-export const copyDocument = (documentRef) => {
-  documentRef.focus()
+export const copyDocument = () => {
   exec(SELECT_ALL_CMD)
   exec(COPY_CMD)
 
-  dispatch({
+  return {
     type: COPY_DOCUMENT,
-  })
+  }
 }

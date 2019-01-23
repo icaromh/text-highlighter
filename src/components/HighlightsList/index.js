@@ -1,4 +1,4 @@
-import HighlightsList from "./HighlightsList"
+import HighlightsList from './HighlightsList'
 import './HighlightsList.css'
 
 
