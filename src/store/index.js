@@ -14,8 +14,7 @@ export const loadState = () => {
 
 export const saveState = (state) => {
   try {
-    const { favoriteItems } = state
-    const serializedState = JSON.stringify({ favoriteItems })
+    const serializedState = JSON.stringify(state)
     window.localStorage.setItem('reduxState', serializedState)
   } catch (e) {
     console.log(e) // eslint-disable-line
