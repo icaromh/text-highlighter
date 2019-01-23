@@ -1,11 +1,9 @@
 import React from 'react'
 
-import Toolbar from '../Toolbar'
-
-const Header = () => (
+const Header = ({ title, children }) => (
   <div className="Header">
-    <h1 className="Header__title">Text highlighter</h1>
-    <Toolbar />
+    <h1 className="Header__title">{title}</h1>
+    {children}
   </div>
 )
 

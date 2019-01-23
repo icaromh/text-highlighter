@@ -4,7 +4,8 @@ import { Provider } from 'react-redux'
 
 import configureStore from './store/configureStore'
 import { loadState, saveState } from './store'
-import App from './components/App'
+
+import App from './containers/App'
 
 const initialState = loadState()
 const store = configureStore(initialState)

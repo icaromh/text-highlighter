@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
 
 import {
-  hightlights
+  highlights
 } from './highlight'
 
 const rootReducer = combineReducers({
-  hightlights
+  highlights
 })
 
 export default rootReducer

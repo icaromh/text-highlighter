@@ -1,19 +1,63 @@
-export const FETCH_SHOWS = 'FETCH_SHOWS'
-export const GET_SHOW = 'GET_SHOW'
-export const SEARCH_TERM = 'SEARCH_TERM'
-export const DO_SEARCH_SHOWS = 'DO_SEARCH_SHOWS'
+import {
+  COPY_CMD,
+  HIGHLIGHT_CMD,
+  SELECT_ALL_CMD,
+} from '../constants/commands'
 
-export const searchTerm = serie => ({
-  type: SEARCH_TERM,
-  payload: serie,
-})
+export const ADD_HIGHLIGHT = 'ADD_HIGHLIGHT'
+export const COPY_DOCUMENT = 'COPY_DOCUMENT'
 
-export const searchShow = (show) => {
-  const url = `${API_URL}/search?q=${show}`
-  const request = axios.get(url)
+const exec = (cmd, param = null) => {
+  document.execCommand('styleWithCSS', false);
+  document.execCommand(cmd, false, param)
+}
+
+const getHeadNTail = (selection) => {
+  let head = selection.anchorOffset
+  let tail = selection.extentOffset
+
+  if (head > tail) {
+    head = selection.extentOffset
+    tail = selection.anchorOffset
+  }
 
   return {
-    type: DO_SEARCH_SHOWS,
-    payload: request,
+    head,
+    tail
   }
+}
+
+const getSelectedHighlight = () => {
+  const selection = window.getSelection()
+  const { head, tail } = getHeadNTail(selection)
+
+  return {
+    sentence: selection.toString(),
+    head,
+    tail,
+  }
+
+}
+
+export const addHighlight = color => {
+  const selectedhighlight = getSelectedHighlight()
+  exec(HIGHLIGHT_CMD, color)
+
+  return {
+    type: ADD_HIGHLIGHT,
+    highlight: {
+      ...selectedhighlight,
+      color
+    }
+  }
+}
+
+export const copyDocument = (documentRef) => {
+  documentRef.focus()
+  exec(SELECT_ALL_CMD)
+  exec(COPY_CMD)
+
+  dispatch({
+    type: COPY_DOCUMENT,
+  })
 }
