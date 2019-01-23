@@ -1,10 +1,11 @@
 import {
   ADD_HIGHLIGHT,
-} from '../actions'
+  FILTER_HIGHLIGHTS,
+} from '../constants/actions'
 
 const initialState = []
 
-const highlights = (state = initialState, action) => {
+export const highlights = (state = initialState, action) => {
   switch (action.type) {
     case ADD_HIGHLIGHT:
       return state
@@ -16,4 +17,15 @@ const highlights = (state = initialState, action) => {
   }
 }
 
-export default highlights
+export const filteredHighlights = (state = initialState, action) => {
+  switch (action.type) {
+    case FILTER_HIGHLIGHTS:
+      return state.filter(() => {
+
+      })
+        .sort((el, next) => (el.head < next.head ? -1 : 0))
+
+    default:
+      return state
+  }
+}

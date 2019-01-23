@@ -1,9 +1,13 @@
 import { combineReducers } from 'redux'
 
-import highlights from './highlight'
+import {
+  highlights,
+  filteredHighlights,
+} from './highlight'
 
 const rootReducer = combineReducers({
   highlights,
+  filteredHighlights: highlights,
 })
 
 export default rootReducer

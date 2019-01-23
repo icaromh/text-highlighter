@@ -1,6 +1,8 @@
 .Header{
+  position: fixed;
+  width: 100%;
+  top: 0;
   background-color: #fff;
-  position: relative;
 }
 
 .Header::after {
@@ -14,9 +16,23 @@
 }
 
 .Header__title {
-  padding: 1rem;
-  margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 400;
+  display: none;
+
 }
 
+@media (min-width: 768px) {
+  .Header {
+    position: relative;
+  }
+
+  .Header__title {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+
+    padding: 1rem;
+    margin: 0;
+
+    display: block;
+  }
+}

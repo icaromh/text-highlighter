@@ -4,8 +4,9 @@ import {
   SELECT_ALL_CMD,
 } from '../constants/commands'
 
-export const ADD_HIGHLIGHT = 'ADD_HIGHLIGHT'
-export const COPY_DOCUMENT = 'COPY_DOCUMENT'
+import {
+  ADD_HIGHLIGHT,
+} from '../constants/actions'
 
 const exec = (cmd, param = null) => {
   document.execCommand('styleWithCSS', false)
