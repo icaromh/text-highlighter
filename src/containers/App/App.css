@@ -1,4 +1,5 @@
 :root {
+
 }
 
 *,
@@ -11,16 +12,14 @@ body {
   margin: 0;
   background-color: #eee;
   font-size: 12px;
-
-  padding-top: 50px;
-  overflow: hidden;
 }
 
 .App{
   margin: 0;
   padding: 0;
-  flex: 1;
-
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {

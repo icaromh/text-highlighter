@@ -1,9 +1,9 @@
-.Toolbar {
+.Button {
   padding: .5rem 1rem;
   border-top: 1px solid #eee;
 }
 
-.Toolbar__button {
+.Button {
   margin-left: 5px;
   border: 0px solid;
   background-color: transparent;
@@ -12,10 +12,15 @@
   opacity: 0.5;
 }
 
-.Toolbar__button:hover,
-.Toolbar__button:active,
-.Toolbar__button:focus{
+.Button:hover,
+.Button:active,
+.Button:focus {
   opacity: 1;
   cursor: pointer;
   background-color: #eee;
+}
+
+.Button.checked {
+  opacity: 1;
+  background-color: #e3e3e3;
 }

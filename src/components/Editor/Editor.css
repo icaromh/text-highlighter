@@ -1,21 +1,16 @@
 .Editor {
-
-}
-
-.Editor__wrapper {
-  height: calc(100vh - 100px);
+  display: flex;
+  flex: 1;
   overflow: auto;
+  justify-content: center;
 }
 
 .Editor__content {
   font-size: 1.2rem;
   line-height: 1.3;
   text-align: justify;
-
-  min-height: 70vh;
   max-width: 800px;
-  padding: 3rem 2.2rem;
-  margin: 0.5rem;
+  padding: 2rem;
 
   outline: none;
 
@@ -26,5 +21,7 @@
 @media (min-width: 768px) {
   .Editor__content {
     margin: 2rem auto;
+    padding: 3rem 2.2rem;
+    width: 100%;
   }
 }

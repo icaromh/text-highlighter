@@ -1,11 +1,9 @@
 import {
   ADD_HIGHLIGHT,
-  FILTER_HIGHLIGHTS,
+  TOGGLE_FILTER_HIGHLIGHT,
 } from '../constants/actions'
 
-const initialState = []
-
-export const highlights = (state = initialState, action) => {
+export const highlights = (state = [], action) => {
   switch (action.type) {
     case ADD_HIGHLIGHT:
       return state
@@ -17,14 +15,13 @@ export const highlights = (state = initialState, action) => {
   }
 }
 
-export const filteredHighlights = (state = initialState, action) => {
+export const filter = (state = [], action) => {
   switch (action.type) {
-    case FILTER_HIGHLIGHTS:
-      return state.filter(() => {
-
-      })
-        .sort((el, next) => (el.head < next.head ? -1 : 0))
-
+    case TOGGLE_FILTER_HIGHLIGHT:
+      if (action.filter.active) {
+        return state.concat(action.filter.color)
+      }
+      return state.filter(color => color !== action.filter.color)
     default:
       return state
   }

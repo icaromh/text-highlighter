@@ -1,12 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+const IconsPropTypes = {
+  color: PropTypes.string,
+}
+
+const IconsDefaultProps = {
+  color: '#000',
+}
+
 export const CopyIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
     <path fill="none" d="M0 0h24v24H0z" />
     <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z" />
   </svg>
 )
+
+export const SavedIcon = ({ color }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path fill={color} d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+    <path d="M0 0h24v24H0z" fill="none" />
+  </svg>
+)
+SavedIcon.propTypes = IconsPropTypes
+SavedIcon.defaultProps = IconsDefaultProps
+
 
 export const MarkIcon = ({ color }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -15,11 +33,5 @@ export const MarkIcon = ({ color }) => (
     <path fill={color} fillOpacity=".8" d="M0 20h24v4H0z" />
   </svg>
 )
-
-MarkIcon.propTypes = {
-  color: PropTypes.string,
-}
-
-MarkIcon.defaultProps = {
-  color: '#000',
-}
+MarkIcon.propTypes = IconsPropTypes
+MarkIcon.defaultProps = IconsDefaultProps

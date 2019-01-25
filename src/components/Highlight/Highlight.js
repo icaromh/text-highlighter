@@ -1,17 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import TWITTER_URL_SHARE from '../../constants'
-
 const Highlight = ({ data }) => (
-  <p>
-    <mark style={{ backgroundColor: data.color }}>
-      {data.sentence}
-    </mark>
-
-    <a target="_blank" rel="noopener noreferrer" href={TWITTER_URL_SHARE(data.sentence)}>Share</a>
-
-  </p>
+  <mark className="Hightlight" style={{ backgroundColor: data.color }}>
+    {data.sentence}
+  </mark>
 )
 
 Highlight.propTypes = {

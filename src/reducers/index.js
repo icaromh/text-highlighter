@@ -2,12 +2,12 @@ import { combineReducers } from 'redux'
 
 import {
   highlights,
-  filteredHighlights,
+  filter,
 } from './highlight'
 
 const rootReducer = combineReducers({
   highlights,
-  filteredHighlights: highlights,
+  filter,
 })
 
 export default rootReducer

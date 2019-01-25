@@ -1,11 +1,12 @@
 import {
   COPY_CMD,
   HIGHLIGHT_CMD,
-  SELECT_ALL_CMD,
 } from '../constants/commands'
 
 import {
   ADD_HIGHLIGHT,
+  COPY_DOCUMENT,
+  TOGGLE_FILTER_HIGHLIGHT,
 } from '../constants/actions'
 
 const exec = (cmd, param = null) => {
@@ -53,10 +54,17 @@ export const addHighlight = (color) => {
 }
 
 export const copyDocument = () => {
-  exec(SELECT_ALL_CMD)
   exec(COPY_CMD)
 
   return {
     type: COPY_DOCUMENT,
   }
 }
+
+export const toggleFilterHighlights = (color, active) => ({
+  type: TOGGLE_FILTER_HIGHLIGHT,
+  filter: {
+    active,
+    color,
+  },
+})

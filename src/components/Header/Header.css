@@ -1,5 +1,5 @@
-.Header{
-  position: fixed;
+.Header {
+  position: sticky;
   width: 100%;
   top: 0;
   background-color: #fff;
@@ -17,7 +17,6 @@
 
 .Header__title {
   display: none;
-
 }
 
 @media (min-width: 768px) {
@@ -26,7 +25,7 @@
   }
 
   .Header__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
 
@@ -34,5 +33,6 @@
     margin: 0;
 
     display: block;
+    border-bottom: 1px solid #eee;
   }
 }
