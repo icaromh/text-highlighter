@@ -15,6 +15,7 @@ test:
 	yarn test --watch --notify
 
 test-e2e: build
+	yarn run serve&
 	yarn test-e2e
 
 lint:

@@ -17,11 +17,19 @@
 
 ## Testing
 
-All the tests are under the `__tests__` folder on each component/module.
+All the tests are under the `__tests__` folder on each component/module. And the e2e tests are under the `e2e` folder.
 
-### Running
-- Using make: `make test`
-- Using Yarn: `yarn test`
+- Unit tests using make: `make test`
+- Unit tests using Yarn: `yarn test`
+
+
+- E2E tests using make: `make test-e2e`
+- Unit tests using Yarn:
+  ```bash
+    yarn build
+    yarn serve&
+    yarn test-e2e
+  ```
 
 
 
