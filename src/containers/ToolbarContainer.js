@@ -36,6 +36,10 @@ ToolbarContainer.propTypes = {
   handleCopyContent: PropTypes.func.isRequired,
 }
 
+export {
+  ToolbarContainer,
+}
+
 export default connect(
   null,
   {
