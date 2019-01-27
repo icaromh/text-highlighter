@@ -7,18 +7,22 @@
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --config ./webpack.config.js --mode production",
     "lint": "eslint --ext .js ./src --fix",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.0.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^2.1.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.15.0",
@@ -39,5 +43,8 @@
     "react-dom": "^16.6.0",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
   }
 }
