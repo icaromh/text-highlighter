@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.Editor__wrapper {
+  width: 100%;
+}
+
 .Editor__content {
   font-size: 1.2rem;
   line-height: 1.3;

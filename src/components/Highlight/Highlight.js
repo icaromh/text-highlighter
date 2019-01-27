@@ -11,8 +11,6 @@ Highlight.propTypes = {
   data: PropTypes.shape({
     sentence: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
-    head: PropTypes.number.isRequired,
-    tail: PropTypes.number.isRequired,
   }).isRequired,
 }
 
