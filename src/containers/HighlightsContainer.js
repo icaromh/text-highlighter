@@ -13,8 +13,8 @@ const HighlightsListContainer = ({ highlights }) => (
     <HighlightFilterContainer />
     <div className="HighlightsList__wrapper">
       {highlights.map(highlight => (
-        <p>
-          <Highlight data={highlight} key={highlight.sentence} />
+        <p key={`${highlight.color}${highlight.sentence}`}>
+          <Highlight data={highlight} />
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -29,12 +29,25 @@ const HighlightsListContainer = ({ highlights }) => (
 )
 
 HighlightsListContainer.propTypes = {
-  highlights: PropTypes.array.isRequired,
+  highlights: PropTypes.arrayOf(PropTypes.shape({
+    sentence: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    head: PropTypes.number,
+    tail: PropTypes.number,
+  })),
+}
+
+HighlightsListContainer.defaultProps = {
+  highlights: [],
 }
 
 const mapStateToProps = state => ({
   highlights: (() => state.highlights.filter(h => state.filter.includes(h.color)))(),
 })
+
+export {
+  HighlightsListContainer,
+}
 
 export default connect(
   mapStateToProps,

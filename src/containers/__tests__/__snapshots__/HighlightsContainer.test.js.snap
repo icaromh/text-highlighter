@@ -1,0 +1,446 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#HighlightFilterContainer expect to list filtered colors 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HighlightsListContainer
+    highlights={
+      Array [
+        Object {
+          "color": "red",
+          "head": 20,
+          "sentence": "sentence a",
+          "tail": 80,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Connect(HighlightFilter) />,
+        <div
+          className="HighlightsList__wrapper"
+        >
+          <p>
+            <Highlight
+              data={
+                Object {
+                  "color": "red",
+                  "head": 20,
+                  "sentence": "sentence a",
+                  "tail": 80,
+                }
+              }
+            />
+            <a
+              href="https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Share
+            </a>
+          </p>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              <Highlight
+                data={
+                  Object {
+                    "color": "red",
+                    "head": 20,
+                    "sentence": "sentence a",
+                    "tail": 80,
+                  }
+                }
+              />
+              <a
+                href="https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Share
+              </a>
+            </p>,
+          ],
+          "className": "HighlightsList__wrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "redsentence a",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Highlight
+                  data={
+                    Object {
+                      "color": "red",
+                      "head": 20,
+                      "sentence": "sentence a",
+                      "tail": 80,
+                    }
+                  }
+                />,
+                <a
+                  href="https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Share
+                </a>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "data": Object {
+                    "color": "red",
+                    "head": 20,
+                    "sentence": "sentence a",
+                    "tail": 80,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Share",
+                  "href": "https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "Share",
+                "type": "a",
+              },
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Connect(HighlightFilter) />,
+          <div
+            className="HighlightsList__wrapper"
+          >
+            <p>
+              <Highlight
+                data={
+                  Object {
+                    "color": "red",
+                    "head": 20,
+                    "sentence": "sentence a",
+                    "tail": 80,
+                  }
+                }
+              />
+              <a
+                href="https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Share
+              </a>
+            </p>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                <Highlight
+                  data={
+                    Object {
+                      "color": "red",
+                      "head": 20,
+                      "sentence": "sentence a",
+                      "tail": 80,
+                    }
+                  }
+                />
+                <a
+                  href="https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Share
+                </a>
+              </p>,
+            ],
+            "className": "HighlightsList__wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "redsentence a",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Highlight
+                    data={
+                      Object {
+                        "color": "red",
+                        "head": 20,
+                        "sentence": "sentence a",
+                        "tail": 80,
+                      }
+                    }
+                  />,
+                  <a
+                    href="https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Share
+                  </a>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "data": Object {
+                      "color": "red",
+                      "head": 20,
+                      "sentence": "sentence a",
+                      "tail": 80,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Share",
+                    "href": "https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": "Share",
+                  "type": "a",
+                },
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`#HighlightFilterContainer expect to render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HighlightsListContainer
+    highlights={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Connect(HighlightFilter) />,
+        <div
+          className="HighlightsList__wrapper"
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "className": "HighlightsList__wrapper",
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "div",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Connect(HighlightFilter) />,
+          <div
+            className="HighlightsList__wrapper"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "className": "HighlightsList__wrapper",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

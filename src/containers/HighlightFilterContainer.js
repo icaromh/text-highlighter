@@ -11,25 +11,25 @@ import {
 import { toggleFilterHighlights } from '../actions'
 import CheckButton from '../components/Button/CheckButton'
 
-const HighlightFilterContainer = ({ handleCheckClick }) => (
-  <div>
+const HighlightFilter = ({ handleCheckClick }) => (
+  <div className="HighlightFilterContainer">
     <CheckButton onClick={handleCheckClick} value={RED} />
     <CheckButton onClick={handleCheckClick} value={YELLOW} />
     <CheckButton onClick={handleCheckClick} value={GREEN} />
   </div>
 )
 
-HighlightFilterContainer.propTypes = {
+HighlightFilter.propTypes = {
   handleCheckClick: PropTypes.func.isRequired,
 }
 
-const mapStateToProps = state => ({
-  highlights: state.highlights,
-})
+export {
+  HighlightFilter,
+}
 
 export default connect(
-  mapStateToProps,
+  null,
   {
     handleCheckClick: toggleFilterHighlights,
   },
-)(HighlightFilterContainer)
+)(HighlightFilter)

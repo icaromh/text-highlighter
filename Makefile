@@ -14,6 +14,9 @@ test:
 	# Run the tests and notify when it's done
 	yarn test --watch --notify
 
+test-e2e: build
+	yarn test-e2e
+
 lint:
 	# Run lint tasks with autofix
 	yarn lint
