@@ -8,6 +8,12 @@ import {
 } from '../../constants/actions'
 
 import {
+  RED,
+  GREEN,
+} from '../../constants/colors'
+
+
+import {
   addHighlight,
   copyDocument,
   toggleFilterHighlights,
@@ -29,17 +35,17 @@ describe('#Actions', () => {
       const expected = {
         type: ADD_HIGHLIGHT,
         highlight: {
-          color: 'red',
+          color: RED,
           head: 10,
           tail: 30,
           sentence: 'dummy selection',
         },
       }
 
-      const res = addHighlight('red')
+      const res = addHighlight(RED)
 
       expect(res).toEqual(expected)
-      expect(document.execCommand.mock.calls[1]).toEqual(['hiliteColor', false, 'red'])
+      expect(document.execCommand.mock.calls[1]).toEqual(['hiliteColor', false, RED])
       expect(document.execCommand.mock.calls.length).toEqual(2)
     })
 
@@ -75,11 +81,11 @@ describe('#Actions', () => {
         type: TOGGLE_FILTER_HIGHLIGHT,
         filter: {
           active: false,
-          color: 'red',
+          color: GREEN,
         },
       }
 
-      const res = toggleFilterHighlights('red', false)
+      const res = toggleFilterHighlights(GREEN, false)
 
       expect(res).toEqual(expected)
     })

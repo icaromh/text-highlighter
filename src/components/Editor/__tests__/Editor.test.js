@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Editor from '../Editor'
+import Editor from '../index'
 
 describe('#Editor', () => {
   test('expect to render', () => {

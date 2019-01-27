@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import HighlightsList from '../HighlightsList'
+import HighlightsList from '../index'
 
 describe('#HighlightsList', () => {
   test('expect to render', () => {

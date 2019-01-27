@@ -5,7 +5,7 @@ import {
   CopyIcon,
   MarkIcon,
   SavedIcon,
-} from '../Icons'
+} from '../index'
 
 describe('#MarkIcon', () => {
   test('expect to render', () => {

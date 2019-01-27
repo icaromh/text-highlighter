@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Toolbar from '../Toolbar'
+import Toolbar from '../index'
 
 describe('#Toolbar', () => {
   test('expect to render', () => {
