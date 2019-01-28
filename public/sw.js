@@ -1,4 +1,4 @@
-const version = '0.3'
+const version = '0.4'
 const cacheName = `highlighter-${version}`
 
 self.addEventListener('install', (e) => {
