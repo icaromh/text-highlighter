@@ -50,7 +50,7 @@ ShallowWrapper {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Share
+              <ShareIcon />
             </a>
           </p>
         </div>,
@@ -89,7 +89,7 @@ ShallowWrapper {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Share
+                <ShareIcon />
               </a>
             </p>,
           ],
@@ -118,7 +118,7 @@ ShallowWrapper {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Share
+                  <ShareIcon />
                 </a>,
               ],
             },
@@ -145,13 +145,21 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Share",
+                  "children": <ShareIcon />,
                   "href": "https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh",
                   "rel": "noopener noreferrer",
                   "target": "_blank",
                 },
                 "ref": null,
-                "rendered": "Share",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": "a",
               },
             ],
@@ -190,7 +198,7 @@ ShallowWrapper {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Share
+                <ShareIcon />
               </a>
             </p>
           </div>,
@@ -229,7 +237,7 @@ ShallowWrapper {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Share
+                  <ShareIcon />
                 </a>
               </p>,
             ],
@@ -258,7 +266,7 @@ ShallowWrapper {
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    Share
+                    <ShareIcon />
                   </a>,
                 ],
               },
@@ -285,13 +293,21 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Share",
+                    "children": <ShareIcon />,
                     "href": "https://twitter.com/intent/tweet?text=sentence a&tw_p=tweetbutton&via=icaromh",
                     "rel": "noopener noreferrer",
                     "target": "_blank",
                   },
                   "ref": null,
-                  "rendered": "Share",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
                   "type": "a",
                 },
               ],

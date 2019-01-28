@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 import HighlightsList from '../components/HighlightsList'
 import Highlight from '../components/Highlight'
+import { ShareIcon } from '../components/Icons'
 import HighlightFilterContainer from './HighlightFilterContainer'
 
 import TWITTER_URL_SHARE from '../constants'
@@ -20,7 +21,7 @@ const HighlightsListContainer = ({ highlights }) => (
             rel="noopener noreferrer"
             href={TWITTER_URL_SHARE(highlight.sentence)}
           >
-              Share
+            <ShareIcon />
           </a>
         </p>
       ))}
