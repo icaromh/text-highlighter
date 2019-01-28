@@ -1,0 +1,42 @@
+{
+  "name": "Text Highlighter",
+  "short_name": "TxtHighter",
+  "icons": [
+      {
+        "src": "/images/baseline-bookmark-48px.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+
+      {
+        "src": "/images/baseline-bookmark-72px.png",
+        "type": "image/png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "/images/baseline-bookmark-96px.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "/images/baseline-bookmark-144px.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "/images/baseline-bookmark-192px.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/images/baseline-bookmark-512px.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+      ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#FF8A80"
+}
