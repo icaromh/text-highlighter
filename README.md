@@ -3,6 +3,30 @@
 ![App Preview](./docs/app-preview.png)
 
 
+## Features
+
+- Mark text as RED, GREEN, YELLOW
+- Filter highlighted sentences by color
+- Offline support (caching the actual version using SW)
+- Possibility to install as "native app" using "add to home screen" feature
+
+
+## @TODO / IDEAS
+
+- [ ] save the current state on `localStorage` to retrieve it on app restart/reload
+- [ ] save as "files" on local cache, so we can "create" multiple "documents"
+- [ ] list the cache files so the user can load past documents
+- [x] "share component":
+    - [ ] using the [WEB SHARE API](https://developers.google.com/web/updates/2016/09/navigator-share)
+    - [x] with fallback to Twitter
+- [ ] Print button to print all the hightlights
+  - [ ] Using @media (print) to show only the hightlights area
+- [ ] Export highlights as image using canvas API
+- [ ] There's a issue with mobile browsers, when the keyboard shows up the browser doesn't know how to position the header fixed
+- [ ] Add E2E to CI
+- [ ] Add `Dockerfile` to run/run tests
+
+
 ## Running
 
 ### Using make
